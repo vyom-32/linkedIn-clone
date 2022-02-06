@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIN Clone</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68787ccd85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- header-section starts here -->
+        <header class="header-section">
+            <div class="container">
+                <div class="navbar-wrapper flex align-items-center justify-ends">
+                    <div class="left-section flex">
+                        <svg class="lin-icon" xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+                            viewBox="0 0 34 34" class="global-nav__logo">
+                            <title>
+                                LinkedIn
+                            </title>
+                            <g>
+                                <path
+                                    d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
+                                    fill="currentColor"></path>
+                            </g>
+                        </svg>
+                        <div class="searchbox flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                                fill="gray" class="mercado-match" width="16" height="16" focusable="false">
+                                <path
+                                    d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z">
+                                </path>
+                            </svg>
+                            <input class="search-input" type="text" placeholder="search">
+                        </div>
+                    </div>
+                    <div class="nav-list-wrapper flex">
+                        <ul class="nav-list flex align-items-center">
+                            <li class="list-element search-icon">
+                                <a href="#" class="nav-link ">
+                                    <i class="fas fa-search icon"></i>
+                                    <h6 class="text">Search</h6>
+                                </a>
+                            </li>
+                            <li class="list-element">
+                                <a href="#" id="homeLink" class="nav-link">
+                                    <i class="fas fa-home icon active"></i>
+                                    <h6 class="text active">Home</h6>
+                                </a>
+                            </li>
+                            <li class="list-element">
+                                <a href="#" class="nav-link elem">
+                                    <i class="fas fa-user-friends icon"></i>
+                                    <h6 class="text">My Network</h6>
+                                </a>
+                            </li>
+                            <li class="list-element">
+                                <a href="#" class="nav-link elem">
+                                    <i class="fas fa-briefcase icon"></i>
+                                    <h6 class="text">Jobs</h6>
+                                </a>
+                            </li>
+                            <li class="list-element">
+                                <a href="#" class="nav-link ">
+                                    <i class="fas fa-envelope-open-text icon"></i>
+                                    <h6 class="text">Messages</h6>
+                                </a>
+                            </li>
+                            <li class="list-element">
+                                <a href="#" class="nav-link elem">
+                                    <i class="fas fa-bell icon"></i>
+                                    <h6 class="text">Notifications</h6>
+                                </a>
+                            </li>
+                            <li class="list-element">
+                                <a href="#" class="nav-link ">
+                                    <i class="fas fa-user icon"></i>
+                                    <div class="flex align-items-center">
+                                        <h6 class="text">Me</h6>
+                                        <i class="fas fa-caret-down subicon"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="col flex flex-column align-items-center justify-center">
+                            <i class="fas fa-th icon"></i>
+                            <div class="flex align-items-center">
+                                <h6 class="text">Work</h6>
+                                <i class="fas fa-caret-down subicon"></i>
+                            </div>
+                        </div>
+                        <div class="col flex flex-column justify-center text-center">
+                            <h6 class="premium">Try Premium for free</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-section ends here -->
+        <!-- content-section starts here -->
+        <section class="content-section">
+            <div class="container flex justify-ends">
+                <div class="left-section">
+                    <div class="profile-wrapper card">
+                        <img src="./assets/images/Group8740.png" alt="cover image" class="cover-image">
+                        <div class="profile-info flex flex-column align-items-center text-center">
+                            <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                            <h2 class="name">Vyom Sarsavadiya</h2>
+                            <h3 class="subtext">Student at Dharmsinh Desai University</h3>
+                            <div class="discover-more text-center">
+                                <h4 class="heading subtext">Discover more</h4>
+                            </div>
+                        </div>
+                        <div class="raw">
+                            <div class="flex justify-ends">
+                                <h4 class="text subtext">Who viewed your profile</h4>
+                                <h4 class="count">22</h4>
+                            </div>
+                            <div class="flex justify-ends">
+                                <h4 class="text subtext">views of your post</h4>
+                                <h4 class="count">322</h4>
+                            </div>
+                        </div>
+                        <div class="raw">
+                            <div class="flex align-items-center">
+                                <div class="bookmark-icon">
+                                    <svg aria-hidden="true" width="15px" hight="20px" focusable="false"
+                                        data-prefix="fas" data-icon="bookmark" class="svg-inline--fa fa-bookmark"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path fill="currentColor"
+                                            d="M384 48V512l-192-112L0 512V48C0 21.5 21.5 0 48 0h288C362.5 0 384 21.5 384 48z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h4 class="text">My items</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-wrapper card">
+                        <h4 class="heading">Recent</h4>
+                        <div class="raw">
+                            <div class="flex">
+                                <i class="fas fa-user-friends icon"></i>
+                                <h4 class="text subtext">Gujarat IT Professionals</h4>
+                            </div>
+                            <div class="flex">
+                                <i class="fas fa-user-friends icon"></i>
+                                <h4 class="text subtext">Knowledge hour with infosys</h4>
+                            </div>
+                        </div>
+                        <h4 class="heading">Groups</h4>
+                        <div class="raw">
+                            <div class="flex">
+                                <i class="fas fa-user-friends icon"></i>
+                                <h4 class="text subtext">Gujarat IT Professionals</h4>
+                            </div>
+                        </div>
+                        <div class="discover-more text-center">
+                            <h4 class="heading">Discover more</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-section">
+                    <div class="card">
+                        <div class="user-info flex">
+                            <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                            <div class="text-info">
+                                <h4 class="text">Joe abner</h4>
+                                <h5 class="subtext">Business Analyst at XYZ</h5>
+                            </div>
+                        </div>
+                        <p class="subtext description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque sollicitudin
+                            porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus.
+                        </p>
+                        <div class="post-wrapper flex justify-center">
+                            <img src="./assets/images/IMG_1103.png" alt="post" class="post-img">
+                            <h4 class="text">With XYZ consulting Firm</h4>
+                        </div>
+                        <div class="likes-wrapper flex justify-ends align-items-center">
+                            <div class="liked-by flex align-items-center">
+                                <svg aria-hidden="true" width="15px" hight="15px" focusable="false" data-prefix="far"
+                                    data-icon="thumbs-up" class="svg-inline--fa fa-thumbs-up" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M96 191.1H32c-17.67 0-32 14.33-32 31.1v223.1c0 17.67 14.33 31.1 32 31.1h64c17.67 0 32-14.33 32-31.1V223.1C128 206.3 113.7 191.1 96 191.1zM512 227c0-36.89-30.05-66.92-66.97-66.92h-99.86C354.7 135.1 360 113.5 360 100.8c0-33.8-26.2-68.78-70.06-68.78c-46.61 0-59.36 32.44-69.61 58.5c-31.66 80.5-60.33 66.39-60.33 93.47c0 12.84 10.36 23.99 24.02 23.99c5.256 0 10.55-1.721 14.97-5.26c76.76-61.37 57.97-122.7 90.95-122.7c16.08 0 22.06 12.75 22.06 20.79c0 7.404-7.594 39.55-25.55 71.59c-2.046 3.646-3.066 7.686-3.066 11.72c0 13.92 11.43 23.1 24 23.1h137.6C455.5 208.1 464 216.6 464 227c0 9.809-7.766 18.03-17.67 18.71c-12.66 .8593-22.36 11.4-22.36 23.94c0 15.47 11.39 15.95 11.39 28.91c0 25.37-35.03 12.34-35.03 42.15c0 11.22 6.392 13.03 6.392 22.25c0 22.66-29.77 13.76-29.77 40.64c0 4.515 1.11 5.961 1.11 9.456c0 10.45-8.516 18.95-18.97 18.95h-52.53c-25.62 0-51.02-8.466-71.5-23.81l-36.66-27.51c-4.315-3.245-9.37-4.811-14.38-4.811c-13.85 0-24.03 11.38-24.03 24.04c0 7.287 3.312 14.42 9.596 19.13l36.67 27.52C235 468.1 270.6 480 306.6 480h52.53c35.33 0 64.36-27.49 66.8-62.2c17.77-12.23 28.83-32.51 28.83-54.83c0-3.046-.2187-6.107-.6406-9.122c17.84-12.15 29.28-32.58 29.28-55.28c0-5.311-.6406-10.54-1.875-15.64C499.9 270.1 512 250.2 512 227z">
+                                    </path>
+                                </svg>
+                                <h6 class="subtext">Liked by paul and 50 others</h6>
+                            </div>
+                            <h6 class="subtext">8 comments</h6>
+                        </div>
+                        <div class="actions-wrapper flex justify-ends align-items-center">
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="far"
+                                    data-icon="thumbs-up" class="svg-inline--fa fa-thumbs-up" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M96 191.1H32c-17.67 0-32 14.33-32 31.1v223.1c0 17.67 14.33 31.1 32 31.1h64c17.67 0 32-14.33 32-31.1V223.1C128 206.3 113.7 191.1 96 191.1zM512 227c0-36.89-30.05-66.92-66.97-66.92h-99.86C354.7 135.1 360 113.5 360 100.8c0-33.8-26.2-68.78-70.06-68.78c-46.61 0-59.36 32.44-69.61 58.5c-31.66 80.5-60.33 66.39-60.33 93.47c0 12.84 10.36 23.99 24.02 23.99c5.256 0 10.55-1.721 14.97-5.26c76.76-61.37 57.97-122.7 90.95-122.7c16.08 0 22.06 12.75 22.06 20.79c0 7.404-7.594 39.55-25.55 71.59c-2.046 3.646-3.066 7.686-3.066 11.72c0 13.92 11.43 23.1 24 23.1h137.6C455.5 208.1 464 216.6 464 227c0 9.809-7.766 18.03-17.67 18.71c-12.66 .8593-22.36 11.4-22.36 23.94c0 15.47 11.39 15.95 11.39 28.91c0 25.37-35.03 12.34-35.03 42.15c0 11.22 6.392 13.03 6.392 22.25c0 22.66-29.77 13.76-29.77 40.64c0 4.515 1.11 5.961 1.11 9.456c0 10.45-8.516 18.95-18.97 18.95h-52.53c-25.62 0-51.02-8.466-71.5-23.81l-36.66-27.51c-4.315-3.245-9.37-4.811-14.38-4.811c-13.85 0-24.03 11.38-24.03 24.04c0 7.287 3.312 14.42 9.596 19.13l36.67 27.52C235 468.1 270.6 480 306.6 480h52.53c35.33 0 64.36-27.49 66.8-62.2c17.77-12.23 28.83-32.51 28.83-54.83c0-3.046-.2187-6.107-.6406-9.122c17.84-12.15 29.28-32.58 29.28-55.28c0-5.311-.6406-10.54-1.875-15.64C499.9 270.1 512 250.2 512 227z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">like</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="far"
+                                    data-icon="comment" class="svg-inline--fa fa-comment" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M256 32C114.6 32 .0272 125.1 .0272 240c0 47.63 19.91 91.25 52.91 126.2c-14.88 39.5-45.87 72.88-46.37 73.25c-6.625 7-8.375 17.25-4.625 26C5.818 474.2 14.38 480 24 480c61.5 0 109.1-25.75 139.1-46.25C191.1 442.8 223.3 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32zM256.1 400c-26.75 0-53.12-4.125-78.38-12.12l-22.75-7.125l-19.5 13.75c-14.25 10.12-33.88 21.38-57.5 29c7.375-12.12 14.37-25.75 19.88-40.25l10.62-28l-20.62-21.87C69.82 314.1 48.07 282.2 48.07 240c0-88.25 93.25-160 208-160s208 71.75 208 160S370.8 400 256.1 400z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Comment</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="fas"
+                                    data-icon="share" class="svg-inline--fa fa-share" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M503.7 226.2l-176 151.1c-15.38 13.3-39.69 2.545-39.69-18.16V272.1C132.9 274.3 66.06 312.8 111.4 457.8c5.031 16.09-14.41 28.56-28.06 18.62C39.59 444.6 0 383.8 0 322.3c0-152.2 127.4-184.4 288-186.3V56.02c0-20.67 24.28-31.46 39.69-18.16l176 151.1C514.8 199.4 514.8 216.6 503.7 226.2z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Share</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="fab"
+                                    data-icon="telegram" class="svg-inline--fa fa-telegram" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                    <path fill="currentColor"
+                                        d="M248 8C111 8 0 119 0 256S111 504 248 504 496 392.1 496 256 384.1 8 248 8zM362.1 176.7c-3.732 39.22-19.88 134.4-28.1 178.3-3.476 18.58-10.32 24.82-16.95 25.42-14.4 1.326-25.34-9.517-39.29-18.66-21.83-14.31-34.16-23.22-55.35-37.18-24.49-16.14-8.612-25 5.342-39.5 3.652-3.793 67.11-61.51 68.33-66.75 .153-.655 .3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283 .746-104.6 69.14-14.85 10.19-26.89 9.934c-8.855-.191-25.89-5.006-38.55-9.123-15.53-5.048-27.88-7.717-26.8-16.29q.84-6.7 18.45-13.7 108.4-47.25 144.6-62.3c68.87-28.65 83.18-33.62 92.51-33.79 2.052-.034 6.639 .474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716A43.76 43.76 0 0 1 362.1 176.7z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Send</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card suggested-wrapper">
+                        <h4 class="subtext">Add to your feed</h4>
+
+                        <div class="next flex justify-center align-items-center">
+                            <img src="./assets/images/Path 6733 (1).svg" alt="next-icon" class="next-icon" />
+                        </div>
+                        <div class="prev flex justify-center align-items-center">
+                            <img src="./assets/images/Path 6733.svg" alt="prev-icon" class="prev-icon" />
+                        </div>
+                        <ul class="suggested">
+                            <li class="list-element box">
+                                <div class="user-info flex">
+                                    <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                                    <div class="text-info">
+                                        <h4 class="text">Joe abner</h4>
+                                        <h5 class="subtext">Business Analyst at XYZ</h5>
+                                    </div>
+                                </div>
+                                <a href="#" class="follow-btn flex align-items-center justify-center">Follow</a>
+                            </li>
+                            <li class="list-element box">
+                                <div class="user-info flex">
+                                    <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                                    <div class="text-info">
+                                        <h4 class="text">Joe root</h4>
+                                        <h5 class="subtext">Business Analyst at XYZ</h5>
+                                    </div>
+                                </div>
+                                <a href="#" class="follow-btn flex align-items-center justify-center">Follow</a>
+                            </li>
+                            <li class="list-element box">
+                                <div class="user-info flex">
+                                    <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                                    <div class="text-info">
+                                        <h4 class="text">phillip lee</h4>
+                                        <h5 class="subtext">Business Analyst at XYZ</h5>
+                                    </div>
+                                </div>
+                                <a href="#" class="follow-btn flex align-items-center justify-center">Follow</a>
+                            </li>
+                            <li class="list-element box">
+                                <div class="user-info flex">
+                                    <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                                    <div class="text-info">
+                                        <h4 class="text">Charlie abner</h4>
+                                        <h5 class="subtext">Business Analyst at XYZ</h5>
+                                    </div>
+                                </div>
+                                <a href="#" class="follow-btn flex align-items-center justify-center">Follow</a>
+                            </li>
+                            <li class="list-element box">
+                                <div class="user-info flex">
+                                    <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                                    <div class="text-info">
+                                        <h4 class="text">juan smit</h4>
+                                        <h5 class="subtext">Business Analyst at XYZ</h5>
+                                    </div>
+                                </div>
+                                <a href="#" class="follow-btn flex align-items-center justify-center">Follow</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="user-info flex">
+                            <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                            <div class="text-info">
+                                <h4 class="text">Joe abner</h4>
+                                <h5 class="subtext">Business Analyst at XYZ</h5>
+                            </div>
+                        </div>
+                        <p class="subtext description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque sollicitudin
+                            porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus.
+                        </p>
+                        <div class="post-wrapper flex justify-center">
+                            <img src="./assets/images/Group8754.png" alt="post" class="post-img">
+                            <h4 class="text">With XYZ consulting Firm</h4>
+                        </div>
+                        <div class="likes-wrapper flex justify-ends align-items-center">
+                            <div class="liked-by flex align-items-center">
+                                <svg aria-hidden="true" width="15px" hight="15px" focusable="false" data-prefix="far"
+                                    data-icon="thumbs-up" class="svg-inline--fa fa-thumbs-up" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M96 191.1H32c-17.67 0-32 14.33-32 31.1v223.1c0 17.67 14.33 31.1 32 31.1h64c17.67 0 32-14.33 32-31.1V223.1C128 206.3 113.7 191.1 96 191.1zM512 227c0-36.89-30.05-66.92-66.97-66.92h-99.86C354.7 135.1 360 113.5 360 100.8c0-33.8-26.2-68.78-70.06-68.78c-46.61 0-59.36 32.44-69.61 58.5c-31.66 80.5-60.33 66.39-60.33 93.47c0 12.84 10.36 23.99 24.02 23.99c5.256 0 10.55-1.721 14.97-5.26c76.76-61.37 57.97-122.7 90.95-122.7c16.08 0 22.06 12.75 22.06 20.79c0 7.404-7.594 39.55-25.55 71.59c-2.046 3.646-3.066 7.686-3.066 11.72c0 13.92 11.43 23.1 24 23.1h137.6C455.5 208.1 464 216.6 464 227c0 9.809-7.766 18.03-17.67 18.71c-12.66 .8593-22.36 11.4-22.36 23.94c0 15.47 11.39 15.95 11.39 28.91c0 25.37-35.03 12.34-35.03 42.15c0 11.22 6.392 13.03 6.392 22.25c0 22.66-29.77 13.76-29.77 40.64c0 4.515 1.11 5.961 1.11 9.456c0 10.45-8.516 18.95-18.97 18.95h-52.53c-25.62 0-51.02-8.466-71.5-23.81l-36.66-27.51c-4.315-3.245-9.37-4.811-14.38-4.811c-13.85 0-24.03 11.38-24.03 24.04c0 7.287 3.312 14.42 9.596 19.13l36.67 27.52C235 468.1 270.6 480 306.6 480h52.53c35.33 0 64.36-27.49 66.8-62.2c17.77-12.23 28.83-32.51 28.83-54.83c0-3.046-.2187-6.107-.6406-9.122c17.84-12.15 29.28-32.58 29.28-55.28c0-5.311-.6406-10.54-1.875-15.64C499.9 270.1 512 250.2 512 227z">
+                                    </path>
+                                </svg>
+                                <h6 class="subtext">Liked by paul and 50 others</h6>
+                            </div>
+                            <h6 class="subtext">8 comments</h6>
+                        </div>
+                        <div class="actions-wrapper flex justify-ends align-items-center">
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="far"
+                                    data-icon="thumbs-up" class="svg-inline--fa fa-thumbs-up" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M96 191.1H32c-17.67 0-32 14.33-32 31.1v223.1c0 17.67 14.33 31.1 32 31.1h64c17.67 0 32-14.33 32-31.1V223.1C128 206.3 113.7 191.1 96 191.1zM512 227c0-36.89-30.05-66.92-66.97-66.92h-99.86C354.7 135.1 360 113.5 360 100.8c0-33.8-26.2-68.78-70.06-68.78c-46.61 0-59.36 32.44-69.61 58.5c-31.66 80.5-60.33 66.39-60.33 93.47c0 12.84 10.36 23.99 24.02 23.99c5.256 0 10.55-1.721 14.97-5.26c76.76-61.37 57.97-122.7 90.95-122.7c16.08 0 22.06 12.75 22.06 20.79c0 7.404-7.594 39.55-25.55 71.59c-2.046 3.646-3.066 7.686-3.066 11.72c0 13.92 11.43 23.1 24 23.1h137.6C455.5 208.1 464 216.6 464 227c0 9.809-7.766 18.03-17.67 18.71c-12.66 .8593-22.36 11.4-22.36 23.94c0 15.47 11.39 15.95 11.39 28.91c0 25.37-35.03 12.34-35.03 42.15c0 11.22 6.392 13.03 6.392 22.25c0 22.66-29.77 13.76-29.77 40.64c0 4.515 1.11 5.961 1.11 9.456c0 10.45-8.516 18.95-18.97 18.95h-52.53c-25.62 0-51.02-8.466-71.5-23.81l-36.66-27.51c-4.315-3.245-9.37-4.811-14.38-4.811c-13.85 0-24.03 11.38-24.03 24.04c0 7.287 3.312 14.42 9.596 19.13l36.67 27.52C235 468.1 270.6 480 306.6 480h52.53c35.33 0 64.36-27.49 66.8-62.2c17.77-12.23 28.83-32.51 28.83-54.83c0-3.046-.2187-6.107-.6406-9.122c17.84-12.15 29.28-32.58 29.28-55.28c0-5.311-.6406-10.54-1.875-15.64C499.9 270.1 512 250.2 512 227z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">like</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="far"
+                                    data-icon="comment" class="svg-inline--fa fa-comment" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M256 32C114.6 32 .0272 125.1 .0272 240c0 47.63 19.91 91.25 52.91 126.2c-14.88 39.5-45.87 72.88-46.37 73.25c-6.625 7-8.375 17.25-4.625 26C5.818 474.2 14.38 480 24 480c61.5 0 109.1-25.75 139.1-46.25C191.1 442.8 223.3 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32zM256.1 400c-26.75 0-53.12-4.125-78.38-12.12l-22.75-7.125l-19.5 13.75c-14.25 10.12-33.88 21.38-57.5 29c7.375-12.12 14.37-25.75 19.88-40.25l10.62-28l-20.62-21.87C69.82 314.1 48.07 282.2 48.07 240c0-88.25 93.25-160 208-160s208 71.75 208 160S370.8 400 256.1 400z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Comment</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="fas"
+                                    data-icon="share" class="svg-inline--fa fa-share" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M503.7 226.2l-176 151.1c-15.38 13.3-39.69 2.545-39.69-18.16V272.1C132.9 274.3 66.06 312.8 111.4 457.8c5.031 16.09-14.41 28.56-28.06 18.62C39.59 444.6 0 383.8 0 322.3c0-152.2 127.4-184.4 288-186.3V56.02c0-20.67 24.28-31.46 39.69-18.16l176 151.1C514.8 199.4 514.8 216.6 503.7 226.2z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Share</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="fab"
+                                    data-icon="telegram" class="svg-inline--fa fa-telegram" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                    <path fill="currentColor"
+                                        d="M248 8C111 8 0 119 0 256S111 504 248 504 496 392.1 496 256 384.1 8 248 8zM362.1 176.7c-3.732 39.22-19.88 134.4-28.1 178.3-3.476 18.58-10.32 24.82-16.95 25.42-14.4 1.326-25.34-9.517-39.29-18.66-21.83-14.31-34.16-23.22-55.35-37.18-24.49-16.14-8.612-25 5.342-39.5 3.652-3.793 67.11-61.51 68.33-66.75 .153-.655 .3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283 .746-104.6 69.14-14.85 10.19-26.89 9.934c-8.855-.191-25.89-5.006-38.55-9.123-15.53-5.048-27.88-7.717-26.8-16.29q.84-6.7 18.45-13.7 108.4-47.25 144.6-62.3c68.87-28.65 83.18-33.62 92.51-33.79 2.052-.034 6.639 .474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716A43.76 43.76 0 0 1 362.1 176.7z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Send</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="user-info flex">
+                            <img src="./assets/images/IMG_1103copy4.png" alt="profile" class="profile-img">
+                            <div class="text-info">
+                                <h4 class="text">Joe abner</h4>
+                                <h5 class="subtext">Business Analyst at XYZ</h5>
+                            </div>
+                        </div>
+                        <p class="subtext description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque sollicitudin
+                            porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus.
+                        </p>
+                        <div class="post-wrapper flex justify-center">
+                            <img src="./assets/images/Group8740.png" alt="post" class="post-img">
+                            <h4 class="text">With XYZ consulting Firm</h4>
+                        </div>
+                        <div class="likes-wrapper flex justify-ends align-items-center">
+                            <div class="liked-by flex align-items-center">
+                                <svg aria-hidden="true" width="15px" hight="15px" focusable="false" data-prefix="far"
+                                    data-icon="thumbs-up" class="svg-inline--fa fa-thumbs-up" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M96 191.1H32c-17.67 0-32 14.33-32 31.1v223.1c0 17.67 14.33 31.1 32 31.1h64c17.67 0 32-14.33 32-31.1V223.1C128 206.3 113.7 191.1 96 191.1zM512 227c0-36.89-30.05-66.92-66.97-66.92h-99.86C354.7 135.1 360 113.5 360 100.8c0-33.8-26.2-68.78-70.06-68.78c-46.61 0-59.36 32.44-69.61 58.5c-31.66 80.5-60.33 66.39-60.33 93.47c0 12.84 10.36 23.99 24.02 23.99c5.256 0 10.55-1.721 14.97-5.26c76.76-61.37 57.97-122.7 90.95-122.7c16.08 0 22.06 12.75 22.06 20.79c0 7.404-7.594 39.55-25.55 71.59c-2.046 3.646-3.066 7.686-3.066 11.72c0 13.92 11.43 23.1 24 23.1h137.6C455.5 208.1 464 216.6 464 227c0 9.809-7.766 18.03-17.67 18.71c-12.66 .8593-22.36 11.4-22.36 23.94c0 15.47 11.39 15.95 11.39 28.91c0 25.37-35.03 12.34-35.03 42.15c0 11.22 6.392 13.03 6.392 22.25c0 22.66-29.77 13.76-29.77 40.64c0 4.515 1.11 5.961 1.11 9.456c0 10.45-8.516 18.95-18.97 18.95h-52.53c-25.62 0-51.02-8.466-71.5-23.81l-36.66-27.51c-4.315-3.245-9.37-4.811-14.38-4.811c-13.85 0-24.03 11.38-24.03 24.04c0 7.287 3.312 14.42 9.596 19.13l36.67 27.52C235 468.1 270.6 480 306.6 480h52.53c35.33 0 64.36-27.49 66.8-62.2c17.77-12.23 28.83-32.51 28.83-54.83c0-3.046-.2187-6.107-.6406-9.122c17.84-12.15 29.28-32.58 29.28-55.28c0-5.311-.6406-10.54-1.875-15.64C499.9 270.1 512 250.2 512 227z">
+                                    </path>
+                                </svg>
+                                <h6 class="subtext">Liked by paul and 50 others</h6>
+                            </div>
+                            <h6 class="subtext">8 comments</h6>
+                        </div>
+                        <div class="actions-wrapper flex justify-ends align-items-center">
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="far"
+                                    data-icon="thumbs-up" class="svg-inline--fa fa-thumbs-up" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M96 191.1H32c-17.67 0-32 14.33-32 31.1v223.1c0 17.67 14.33 31.1 32 31.1h64c17.67 0 32-14.33 32-31.1V223.1C128 206.3 113.7 191.1 96 191.1zM512 227c0-36.89-30.05-66.92-66.97-66.92h-99.86C354.7 135.1 360 113.5 360 100.8c0-33.8-26.2-68.78-70.06-68.78c-46.61 0-59.36 32.44-69.61 58.5c-31.66 80.5-60.33 66.39-60.33 93.47c0 12.84 10.36 23.99 24.02 23.99c5.256 0 10.55-1.721 14.97-5.26c76.76-61.37 57.97-122.7 90.95-122.7c16.08 0 22.06 12.75 22.06 20.79c0 7.404-7.594 39.55-25.55 71.59c-2.046 3.646-3.066 7.686-3.066 11.72c0 13.92 11.43 23.1 24 23.1h137.6C455.5 208.1 464 216.6 464 227c0 9.809-7.766 18.03-17.67 18.71c-12.66 .8593-22.36 11.4-22.36 23.94c0 15.47 11.39 15.95 11.39 28.91c0 25.37-35.03 12.34-35.03 42.15c0 11.22 6.392 13.03 6.392 22.25c0 22.66-29.77 13.76-29.77 40.64c0 4.515 1.11 5.961 1.11 9.456c0 10.45-8.516 18.95-18.97 18.95h-52.53c-25.62 0-51.02-8.466-71.5-23.81l-36.66-27.51c-4.315-3.245-9.37-4.811-14.38-4.811c-13.85 0-24.03 11.38-24.03 24.04c0 7.287 3.312 14.42 9.596 19.13l36.67 27.52C235 468.1 270.6 480 306.6 480h52.53c35.33 0 64.36-27.49 66.8-62.2c17.77-12.23 28.83-32.51 28.83-54.83c0-3.046-.2187-6.107-.6406-9.122c17.84-12.15 29.28-32.58 29.28-55.28c0-5.311-.6406-10.54-1.875-15.64C499.9 270.1 512 250.2 512 227z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">like</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="far"
+                                    data-icon="comment" class="svg-inline--fa fa-comment" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M256 32C114.6 32 .0272 125.1 .0272 240c0 47.63 19.91 91.25 52.91 126.2c-14.88 39.5-45.87 72.88-46.37 73.25c-6.625 7-8.375 17.25-4.625 26C5.818 474.2 14.38 480 24 480c61.5 0 109.1-25.75 139.1-46.25C191.1 442.8 223.3 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32zM256.1 400c-26.75 0-53.12-4.125-78.38-12.12l-22.75-7.125l-19.5 13.75c-14.25 10.12-33.88 21.38-57.5 29c7.375-12.12 14.37-25.75 19.88-40.25l10.62-28l-20.62-21.87C69.82 314.1 48.07 282.2 48.07 240c0-88.25 93.25-160 208-160s208 71.75 208 160S370.8 400 256.1 400z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Comment</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="fas"
+                                    data-icon="share" class="svg-inline--fa fa-share" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M503.7 226.2l-176 151.1c-15.38 13.3-39.69 2.545-39.69-18.16V272.1C132.9 274.3 66.06 312.8 111.4 457.8c5.031 16.09-14.41 28.56-28.06 18.62C39.59 444.6 0 383.8 0 322.3c0-152.2 127.4-184.4 288-186.3V56.02c0-20.67 24.28-31.46 39.69-18.16l176 151.1C514.8 199.4 514.8 216.6 503.7 226.2z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Share</h4>
+                            </div>
+                            <div class="action flex align-items-center">
+                                <svg aria-hidden="true" width="25px" hight="25px" focusable="false" data-prefix="fab"
+                                    data-icon="telegram" class="svg-inline--fa fa-telegram" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                    <path fill="currentColor"
+                                        d="M248 8C111 8 0 119 0 256S111 504 248 504 496 392.1 496 256 384.1 8 248 8zM362.1 176.7c-3.732 39.22-19.88 134.4-28.1 178.3-3.476 18.58-10.32 24.82-16.95 25.42-14.4 1.326-25.34-9.517-39.29-18.66-21.83-14.31-34.16-23.22-55.35-37.18-24.49-16.14-8.612-25 5.342-39.5 3.652-3.793 67.11-61.51 68.33-66.75 .153-.655 .3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283 .746-104.6 69.14-14.85 10.19-26.89 9.934c-8.855-.191-25.89-5.006-38.55-9.123-15.53-5.048-27.88-7.717-26.8-16.29q.84-6.7 18.45-13.7 108.4-47.25 144.6-62.3c68.87-28.65 83.18-33.62 92.51-33.79 2.052-.034 6.639 .474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716A43.76 43.76 0 0 1 362.1 176.7z">
+                                    </path>
+                                </svg>
+                                <h4 class="subtext">Send</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="news-wrapper card">
+                        <div class="heading-wrapper flex justify-ends">
+                            <h3 class="heading">LinkedIn News</h3>
+                            <svg aria-hidden="true" width="20px" height="20px" focusable="false" data-prefix="fas"
+                                data-icon="circle-info" class="svg-inline--fa fa-circle-info" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z">
+                                </path>
+                            </svg>
+                        </div>
+                        <ul class="news-list">
+                            <li class="list-element">
+                                <h4 class="text">The top career experts you follow</h4>
+                                <h5 class="subtext">Top news - 17,987 readers</h5>
+                            </li>
+                            <li class="list-element">
+                                <h4 class="text">The top career experts you follow</h4>
+                                <h5 class="subtext">Top news - 17,987 readers</h5>
+                            </li>
+                            <li class="list-element">
+                                <h4 class="text">The top career experts you follow</h4>
+                                <h5 class="subtext">Top news - 17,987 readers</h5>
+                            </li>
+                            <li class="list-element">
+                                <h4 class="text">The top career experts you follow</h4>
+                                <h5 class="subtext">Top news - 17,987 readers</h5>
+                            </li>
+                            <li class="list-element">
+                                <h4 class="text">The top career experts you follow</h4>
+                                <h5 class="subtext">Top news - 17,987 readers</h5>
+                            </li>
+                        </ul>
+                        <div class="show-more-wrapper flex align-items-center">
+                            <h4 class="subtext">Show More</h4>
+                            <svg aria-hidden="true" focusable="false" width="15px" height="15px" data-prefix="fas"
+                                data-icon="angle-down" class="svg-inline--fa fa-angle-down" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path fill="gray"
+                                    d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ad-footer-wrapper">
+                        <div class="ad card">
+                            <img src="./assets/images/li_evergreen_jobs_ad_300x250_v1.jpeg" alt="ad" class="ad-img">
+                        </div>
+                        <div class="footer-wrapper">
+                            <ul class="links flex justify-center">
+                                <li class="list-element">
+                                    <a href="#" class="nav-link">About</a>
+                                </li>
+                                <li class="list-element">
+                                    <a href="#" class="nav-link">Accessibility</a>
+                                </li>
+                                <li class="list-element">
+                                    <a href="#" class="nav-link">Help center</a>
+                                </li>
+                                <li class="list-element">
+                                    <a href="#" class="nav-link flex">
+                                        Privacy terms
+                                        <svg aria-hidden="true" focusable="false" width="10px" data-prefix="fas"
+                                            data-icon="angle-down" class="svg-inline--fa fa-angle-down" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="gray"
+                                                d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list-element">
+                                    <a href="#" class="nav-link">Ad choice</a>
+                                </li>
+                                <li class="list-element">
+                                    <a href="#" class="nav-link">Advertising</a>
+                                </li>
+                                <li class="list-element">
+                                    <a href="#" class="nav-link flex">
+                                        Bussiness Services
+                                        <svg aria-hidden="true" focusable="false" width="10px" data-prefix="fas"
+                                            data-icon="angle-down" class="svg-inline--fa fa-angle-down" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path fill="gray"
+                                                d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list-element">
+                                    <a href="#" class="nav-link">Get the linkedIn app</a>
+                                </li>
+                                <li class="list-element">
+                                    <a href="#" class="nav-link">More</a>
+                                </li>
+                            </ul>
+                            <h5 class="text text-center">LinkedIn Corporation &copy; 2022</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="messaging flex justify-ends align-items-center">
+                <div class="text-wrapper flex align-items-center">
+                    <i class="fas fa-user icon"></i>
+                    <h3 class="heading">Messaging</h3>
+                </div>
+                <div class="icons-wrapper">
+                    <svg aria-hidden="true" width="20px" focusable="false" data-prefix="far" data-icon="comment-dots"
+                        class="svg-inline--fa fa-comment-dots" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="gray"
+                            d="M144 208C126.3 208 112 222.2 112 239.1C112 257.7 126.3 272 144 272s31.1-14.25 31.1-32S161.8 208 144 208zM256 207.1c-17.75 0-31.1 14.25-31.1 32s14.25 31.1 31.1 31.1s31.1-14.25 31.1-31.1S273.8 207.1 256 207.1zM368 208c-17.75 0-31.1 14.25-31.1 32s14.25 32 31.1 32c17.75 0 31.99-14.25 31.99-32C400 222.2 385.8 208 368 208zM256 31.1c-141.4 0-255.1 93.12-255.1 208c0 47.62 19.91 91.25 52.91 126.3c-14.87 39.5-45.87 72.88-46.37 73.25c-6.624 7-8.373 17.25-4.624 26C5.818 474.2 14.38 480 24 480c61.49 0 109.1-25.75 139.1-46.25c28.87 9 60.16 14.25 92.9 14.25c141.4 0 255.1-93.13 255.1-207.1S397.4 31.1 256 31.1zM256 400c-26.75 0-53.12-4.125-78.36-12.12l-22.75-7.125L135.4 394.5c-14.25 10.12-33.87 21.38-57.49 29c7.374-12.12 14.37-25.75 19.87-40.25l10.62-28l-20.62-21.87C69.81 314.1 48.06 282.2 48.06 240c0-88.25 93.24-160 207.1-160s207.1 71.75 207.1 160S370.8 400 256 400z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" width="15px" focusable="false" data-prefix="fas" data-icon="pen-to-square"
+                        class="svg-inline--fa fa-pen-to-square" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="gray"
+                            d="M383.1 448H63.1V128h156.1l64-64H63.1C28.65 64 0 92.65 0 128v320c0 35.35 28.65 64 63.1 64h319.1c35.34 0 63.1-28.65 63.1-64l-.0039-220.1l-63.1 63.99V448zM497.9 42.19l-28.13-28.14c-18.75-18.75-49.14-18.75-67.88 0l-38.62 38.63l96.01 96.01l38.62-38.63C516.7 91.33 516.7 60.94 497.9 42.19zM147.3 274.4l-19.04 95.22c-1.678 8.396 5.725 15.8 14.12 14.12l95.23-19.04c4.646-.9297 8.912-3.213 12.26-6.562l186.8-186.8l-96.01-96.01L153.8 262.2C150.5 265.5 148.2 269.8 147.3 274.4z">
+                        </path>
+                    </svg>
+                    <svg aria-hidden="true" focusable="false" width="15px" data-prefix="fas" data-icon="angle-down"
+                        class="svg-inline--fa fa-angle-down" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512">
+                        <path fill="gray"
+                            d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <!-- content-section ends here -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
+</body>
+
+</html>

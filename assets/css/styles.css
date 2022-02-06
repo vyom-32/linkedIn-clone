@@ -1,0 +1,614 @@
+/* *********************************** Fonts starts here *********************************** */
+@font-face {
+  font-family: Catamaran;
+  src: url(../fonts/Catamaran/static/Catamaran-Regular.ttf);
+}
+@font-face {
+  font-family: Catamaran-Bold;
+  src: url(../fonts/Catamaran/static/Catamaran-Bold.ttf);
+}
+@font-face {
+  font-family: Catamaran-Medium;
+  src: url(../fonts/Catamaran/static/Catamaran-Medium.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato-Italik;
+  src: url(../fonts/Lato/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+}
+/* *********************************** Fonts ends here *********************************** */
+/* *********************************** Reset CSS starts here *********************************** */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* *********************************** Reset CSS ends here *********************************** */
+/* *********************************** Root styles starts here *********************************** */
+:root {
+  font-size: 10px;
+}
+/* *********************************** Root styles ends here *********************************** */
+/* *********************************** Common styles starts here *********************************** */
+.main {
+  position: relative;
+  background-color: #e9e9e9;
+}
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1088px;
+  padding: 0 20px;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-ends {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-left {
+  text-align: left;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.subtext {
+  color: gray;
+  font-size: 1.2rem;
+  margin: 0;
+}
+/* *********************************** Common styles ends here *********************************** */
+/* *********************************** header-section starts here *********************************** */
+.header-section {
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9;
+}
+.header-section .container {
+  width: 100%;
+  max-width: 1148px;
+}
+.header-section .navbar-wrapper {
+  height: 53px;
+}
+.header-section .navbar-wrapper .lin-icon {
+  color: rgb(9, 102, 194);
+}
+.header-section .navbar-wrapper .searchbox {
+  height: 34px;
+  background-color: rgb(238, 243, 248);
+  margin-left: 10px;
+  padding-left: 15px;
+  border-radius: 5px;
+  width: 280px;
+  font-size: 1.6rem;
+}
+.header-section .navbar-wrapper .searchbox .search-input {
+  border: 0px;
+  background-color: transparent;
+  margin-left: 5px;
+}
+.header-section .navbar-wrapper .nav-list-wrapper .nav-list {
+  list-style: none;
+  margin: 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.308);
+}
+.header-section .navbar-wrapper .nav-list-wrapper .nav-link {
+  text-align: center;
+  margin: 0 5px;
+}
+.header-section .navbar-wrapper .nav-list-wrapper .icon {
+  color: rgb(95, 94, 94);
+  font-size: 2.5rem;
+}
+.header-section .navbar-wrapper .nav-list-wrapper .subicon {
+  color: rgb(95, 94, 94);
+  font-size: 2rem;
+  margin-left: 5px;
+}
+.header-section .navbar-wrapper .nav-list-wrapper .text {
+  color: rgb(95, 94, 94);
+  font-size: 1.2rem;
+  margin: 0;
+}
+.header-section .navbar-wrapper .nav-list-wrapper .active {
+  color: black;
+}
+.header-section .navbar-wrapper .nav-list-wrapper #homeLink {
+  border-bottom: 2px solid black;
+}
+.header-section .navbar-wrapper .nav-list-wrapper .col .premium {
+  color: brown;
+  font-size: 1.2rem;
+  font-weight: light;
+}
+.header-section .navbar-wrapper .nav-list-wrapper .nav-list .search-icon {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .header-section .navbar-wrapper .searchbox {
+    display: none;
+  }
+  .header-section .navbar-wrapper .nav-list-wrapper .nav-list .search-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-section .navbar-wrapper .nav-list-wrapper .text {
+    display: none;
+  }
+  .header-section .navbar-wrapper .nav-list-wrapper .subicon {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-section .navbar-wrapper .col {
+    display: none;
+  }
+  .header-section .navbar-wrapper .nav-list-wrapper .nav-list {
+    border: 0px;
+  }
+  .header-section .navbar-wrapper .nav-list-wrapper .nav-link {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-section .navbar-wrapper .nav-list-wrapper .elem {
+    display: none;
+  }
+}
+/* *********************************** header-section ends here *********************************** */
+/* *********************************** content-section starts here *********************************** */
+.content-section .container {
+  max-width: 1148px;
+  padding-top: 100px;
+}
+.discover-more {
+  border-top: 1px solid rgba(128, 128, 128, 0.425);
+  padding-top: 10px;
+}
+.content-section .left-section {
+  width: 20%;
+}
+.content-section .left-section .card {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.content-section .left-section .profile-wrapper .cover-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.content-section .left-section .profile-wrapper .profile-info .profile-img {
+  width: 100%;
+  height: 100%;
+  max-width: 68px;
+  max-height: 68px;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin-top: -34px;
+}
+.content-section .left-section .profile-wrapper .profile-info .name {
+  font-size: 1.6rem;
+  font-size: bold;
+  margin: 20px 10px 10px 10px;
+}
+.content-section .left-section .profile-wrapper .profile-info .subtext {
+  font-size: 1.2rem;
+  margin: 0 10px 20px 10px;
+}
+.content-section .left-section .profile-wrapper .raw {
+  border-top: 1px solid rgba(128, 128, 128, 0.425);
+  padding: 10px;
+  font-size: 1.4rem;
+}
+.content-section .left-section .profile-wrapper .discover-more {
+  display: none;
+}
+.content-section .left-section .profile-wrapper .raw .text {
+  margin: 5px 0;
+}
+.content-section .left-section .profile-wrapper .raw .count {
+  color: blue;
+  margin: 5px 0;
+}
+.content-section .left-section .profile-wrapper .raw .bookmark-icon {
+  margin-right: 10px;
+}
+.content-section .left-section .recent-wrapper {
+  padding: 10px;
+  color: gray;
+  position: sticky;
+  top: 70px;
+}
+.content-section .left-section .recent-wrapper .raw {
+  padding: 10px;
+  font-size: 1.4rem;
+}
+.content-section .left-section .recent-wrapper .raw .icon {
+  margin-right: 10px;
+}
+.content-section .middle-section {
+  width: 50%;
+  margin: 0 10px;
+}
+.content-section .middle-section .card {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.content-section .middle-section .card .user-info {
+  padding: 10px;
+}
+.content-section .middle-section .card .user-info .profile-img {
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 100%;
+}
+.content-section .middle-section .card .user-info .text-info .text {
+  color: black;
+  font-size: 1.6rem;
+}
+.content-section .middle-section .card .description {
+  padding: 0 10px;
+}
+.content-section .middle-section .card .post-wrapper {
+  position: relative;
+}
+.content-section .middle-section .card .post-wrapper .post-img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  z-index: 0;
+}
+.content-section .middle-section .card .post-wrapper .text {
+  background-color: rgba(0, 0, 0, 0.644);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.content-section .middle-section .card .likes-wrapper {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.425);
+}
+.content-section .middle-section .card .actions-wrapper {
+  padding: 15px;
+}
+.content-section .middle-section .card .text {
+  margin-left: 5px;
+}
+.content-section .middle-section .card .subtext {
+  margin-left: 5px;
+  font-size: 1.4rem;
+}
+.content-section .middle-section .suggested-wrapper {
+  position: relative;
+  padding: 10px 0;
+}
+.content-section .middle-section .suggested-wrapper .next {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  height: 41px;
+  width: 41px;
+  border-radius: 20.5px;
+  background-color: rgba(0, 0, 0, 0.16);
+  z-index: 1;
+  cursor: pointer;
+}
+.content-section .middle-section .suggested-wrapper .prev {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  height: 41px;
+  width: 41px;
+  border-radius: 20.5px;
+  background-color: rgba(0, 0, 0, 0.16);
+  z-index: 1;
+  cursor: pointer;
+}
+.content-section .middle-section .suggested {
+  list-style: none;
+  margin-top: 30px;
+  position: relative;
+  padding: 0;
+}
+.content-section .middle-section .box {
+  height: 120px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.541);
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.content-section .middle-section .box .text {
+  margin: 0 0 0 5px;
+}
+.content-section .middle-section .box .subtext {
+  font-size: 1.2rem;
+}
+.content-section .middle-section .box .follow-btn {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid rgb(47, 0, 255);
+  height: 30px;
+  color: rgb(47, 0, 255);
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.content-section .right-section {
+  width: 30%;
+  max-width: 337px;
+}
+.content-section .right-section .card {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.content-section .right-section .news-wrapper {
+  padding: 15px;
+}
+.content-section .right-section .news-wrapper .heading-wrapper .heading {
+  font-weight: bold;
+}
+.content-section .right-section .news-wrapper .news-list {
+  list-style-type: square;
+}
+.content-section .right-section .news-wrapper .news-list .list-element {
+  margin: 10px 0;
+}
+.content-section .right-section .news-wrapper .show-more-wrapper .subtext {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  color: gray;
+  margin-right: 10px;
+}
+.content-section .right-section .ad-footer-wrapper {
+  color: gray;
+  position: sticky;
+  top: 70px;
+  width: 100%;
+}
+.content-section .right-section .ad-footer-wrapper .ad {
+  padding: 0 10px;
+}
+.content-section .right-section .footer-wrapper .links {
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+.content-section .right-section .footer-wrapper .links .nav-link {
+  color: gray;
+}
+.content-section .right-section .footer-wrapper .text {
+  color: black;
+  font-size: 1.6rem;
+}
+.messaging {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.26);
+  width: 288px;
+}
+.messaging .heading {
+  margin: 0 0 0 10px;
+}
+.messaging .fa-user {
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.116);
+  border-radius: 100%;
+  padding: 8px;
+  position: relative;
+}
+.messaging .fa-user::after {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background-color: green;
+  border: 3px solid white;
+  bottom: 0;
+  right: -5px;
+}
+.messaging .icons-wrapper svg {
+  margin: 0 4px;
+}
+@media screen and (max-width: 767px) {
+  .messaging {
+    display: none;
+  }
+  .content-section .right-section {
+    display: none;
+  }
+  .content-section .left-section {
+    width: 30%;
+  }
+  .content-section .middle-section {
+    width: 70%;
+    margin: 0 0 0 10px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .content-section .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-section .left-section {
+    width: 100%;
+  }
+  .content-section .left-section .profile-wrapper .discover-more {
+    display: block;
+    width: 100%;
+  }
+  .content-section .left-section .raw {
+    display: none;
+  }
+  .content-section .left-section .recent-wrapper {
+    display: none;
+  }
+  .content-section .middle-section {
+    width: 100%;
+    margin: 0px;
+  }
+  .content-section .middle-section .card .subtext {
+    font-size: 1.2rem;
+  }
+  .content-section .middle-section .card .actions-wrapper .action .subtext {
+    display: none;
+  }
+}
+/* *********************************** content-section ends here *********************************** */
